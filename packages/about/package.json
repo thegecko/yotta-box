@@ -1,0 +1,25 @@
+{
+    "name": "about",
+    "version": "0.0.0",
+    "browser": "./src/index.js",
+    "description": "About dialog",
+    "engines": {
+        "codebox": ">=1.0.0-alpha"
+    },
+    "dependencies": {
+        "stringify": "3.1.0"
+    },
+    "packageDependencies": {
+        "menubar": "code-box/package-menubar",
+        "yotta": "thegecko/yotta-box-yotta"
+    },
+    "browserify": {
+        "transform": [
+            [
+                "stringify", {
+                    "extensions": [".md", ".html"]
+                }
+            ]
+        ]
+    }
+}
